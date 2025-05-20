@@ -43,6 +43,7 @@ function checkName(name) {
             output.innerText = `Zaznan lovec lignjunov. Ti ne piješ! \n \n Sej ne😂 \n Spij ${ran} ${shots}!`
             sad.style.display = "flex"
             happy.style.display = "none"
+            reserved.style.display = "none"
             video.currentTime = 0;
             video.play()
             sound.currentTime = 0;
@@ -63,6 +64,7 @@ function checkName(name) {
             output.innerText = `${name}, spij ${ran} ${shots}!`
             happy.style.display = "flex"
             sad.style.display = "none"
+            reserved.style.display = "none"
             video.currentTime = 0;
             video.play()
             sound.currentTime = 0;
