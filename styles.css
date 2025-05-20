@@ -30,7 +30,7 @@
     background-color: #f4dfb2;
     padding-top: 120px;
     background-image: url(./images/Izdelek\ brez\ naslova.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
