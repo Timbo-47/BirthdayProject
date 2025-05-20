@@ -25,22 +25,32 @@
     color: rgb(99, 63, 29);
 }
 
+.background {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
 .play {
     text-align: center;
     background-color: #f4dfb2;
+    position: relative;
     padding-top: 120px;
-    background-image: url(./images/Izdelek\ brez\ naslova.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     margin: 0;
     width: 100%;
-    min-height: 80vh;
-    height: auto;
+    height: 80vh;
+    overflow: hidden;
 }
 
 .play h2 {
     font-size: 1.2em;
+    z-index: 1;
+    position: relative;
 }
 
 .play input {
@@ -52,6 +62,8 @@
     font-size: 15px;
     margin-top: 9px;
     outline: none;
+    z-index: 1;
+    position: relative;
 }
 
 .submit {
@@ -62,6 +74,8 @@
     background-color: rgb(216, 177, 133);
     cursor: pointer;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+    z-index: 1;
+    position: relative;
 }
 
 .answer {
@@ -69,10 +83,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    position: relative;
 }
 
 #output {
     margin-top: 21px;
+    z-index: 1;
+    position: relative;
 }
 
 .emoji {
@@ -81,6 +99,8 @@
     border-radius: 30px;
     margin: 20px;
     border: 1px solid rgb(255, 255, 255);
+    z-index: 1;
+    position: relative;
 }
 
 .sad {
@@ -101,6 +121,8 @@
     height: 200px !important;
     width: 250px !important;
     object-fit: cover;
-    transform: translateY(20px);
+    transform: translateY(-200px);
     pointer-events: none;
+    z-index: 2;
+    position: relative;
 }
