@@ -1,6 +1,7 @@
 let output = document.getElementById("output")
 let happy = document.getElementsByClassName("happy")[0]
 let sad = document.getElementsByClassName("sad")[0]
+let reserved = document.getElementsByClassName("reserved")[0]
 let video = document.getElementById("confeti")
 const sound = document.getElementById("soundEffect")
 
@@ -39,25 +40,34 @@ function checkName(name) {
         output.innerText = 'Vnesi ime!'
     } else {
         if (name === "blaž" || name === "blaz" || name === "mihevc") {
-        output.innerText = `Zaznan lovec lignjunov. Ti ne piješ! \n \n Sej ne😂 \n Spij ${ran} ${shots}!`
-        sad.style.display = "flex"
-        happy.style.display = "none"
-        video.currentTime = 0;
-        video.play()
-        sound.currentTime = 0;
-        sound.play()
-        
-    }
-    else {
-        name = name.charAt(0).toUpperCase() + name.slice(1)
-        output.innerText = `${name}, spij ${ran} ${shots}!`
-        happy.style.display = "flex"
-        sad.style.display = "none"
-        video.currentTime = 0;
-        video.play()
-        sound.currentTime = 0;
-        sound.play()
+            output.innerText = `Zaznan lovec lignjunov. Ti ne piješ! \n \n Sej ne😂 \n Spij ${ran} ${shots}!`
+            sad.style.display = "flex"
+            happy.style.display = "none"
+            video.currentTime = 0;
+            video.play()
+            sound.currentTime = 0;
+            sound.play()
+        }
+        else if(name === "jurij" || name === "jurc" || name === "jurč") {
+            output.innerText = "Jurč ti praznuješ tk da spij 6 shotov!"
+            sad.style.display = "none"
+            happy.style.display = "none"
+            reserved.style.display = "flex"
+            video.currentTime = 0;
+            video.play()
+            sound.currentTime = 0;
+            sound.play()
+        }
+        else {
+            name = name.charAt(0).toUpperCase() + name.slice(1)
+            output.innerText = `${name}, spij ${ran} ${shots}!`
+            happy.style.display = "flex"
+            sad.style.display = "none"
+            video.currentTime = 0;
+            video.play()
+            sound.currentTime = 0;
+            sound.play()
+        }
     }
 }
-    }
     

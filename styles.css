@@ -92,6 +92,10 @@
     display: none;
 }
 
+.reserved {
+    display: none;
+}
+
 .confeti {
     position: absolute;
     height: 200px !important;
