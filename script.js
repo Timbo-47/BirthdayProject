@@ -2,6 +2,7 @@ let output = document.getElementById("output")
 let happy = document.getElementsByClassName("happy")[0]
 let sad = document.getElementsByClassName("sad")[0]
 let reserved = document.getElementsByClassName("reserved")[0]
+let zvij = document.getElementsByClassName("zvij")[0]
 let video = document.getElementById("confeti")
 const sound = document.getElementById("soundEffect")
 
@@ -54,6 +55,18 @@ function checkName(name) {
             sad.style.display = "none"
             happy.style.display = "none"
             reserved.style.display = "flex"
+            video.currentTime = 0;
+            video.play()
+            sound.currentTime = 0;
+            sound.play()
+        }
+        else if(name === "enej" || name === "enj"){
+            name = name.charAt(0).toUpperCase() + name.slice(1)
+            output.innerText = `${name}, spij ${ran} ${shots}. \n \n pa hitr zvij enga!`
+            happy.style.display = "none"
+            sad.style.display = "none"
+            reserved.style.display = "none"
+            zvij.style.display = "flex"
             video.currentTime = 0;
             video.play()
             sound.currentTime = 0;
