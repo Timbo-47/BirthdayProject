@@ -97,6 +97,7 @@ html, body {
     margin-top: 21px;
     z-index: 1;
     position: relative;
+    font-size: 1em;
 }
 
 .emoji {
@@ -120,6 +121,7 @@ html, body {
 
 .reserved {
     display: none;
+    width: 130px;
 }
 
 .zvij {
